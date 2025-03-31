@@ -1,0 +1,161 @@
+/* Base Styles */
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.navbar-container {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.contain {
+  width: 100%;
+  height: 60px;
+  background-color: #051e2f;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  box-sizing: border-box;
+  animation: con 2s ease-in;
+}
+
+.nav-brand a {
+  color: #00acea;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Navigation Links */
+.nav-links {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  gap: 15px;
+}
+
+.nav-links li a {
+  padding: 8px 15px;
+  text-decoration: none;
+  font-size: 1rem;
+  color: white;
+  font-family: 'Roboto Slab', sans-serif;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.nav-links li a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0;
+  height: 3px;
+  background-color: #00acea;
+  transition: 0.4s;
+}
+
+.nav-links li a:hover::before {
+  width: 90%;
+}
+
+.nav-links li a:hover {
+  color: #00acea;
+}
+
+/* Login Button */
+.pro-logo {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.pro-logo li a {
+  padding: 8px 15px;
+  color: white;
+  text-decoration: none;
+  font-family: 'Roboto Slab', sans-serif;
+}
+
+/* Mobile Menu Button */
+.mobile-menu-btn {
+  display: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.login-mobile {
+  display: none;
+}
+
+/* Animation */
+@keyframes con {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .mobile-menu-btn {
+    display: block;
+    z-index: 1001;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 70%;
+    height: 100vh;
+    background-color: #051e2f;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: right 0.5s ease;
+    padding-top: 60px;
+  }
+
+  .nav-links.active {
+    right: 0;
+  }
+
+  .nav-links li {
+    margin: 15px 0;
+  }
+
+  .nav-links li a {
+    font-size: 1.2rem;
+  }
+
+  .pro-logo {
+    display: none;
+  }
+
+  .login-mobile {
+    display: block;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-links {
+    width: 100%;
+  }
+  
+  .contain {
+    padding: 0 15px;
+  }
+}
