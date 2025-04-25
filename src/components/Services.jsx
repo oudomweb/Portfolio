@@ -1,27 +1,77 @@
 import React from 'react';
+import { FaCode, FaApple, FaLaptopCode } from 'react-icons/fa';
+import { FaCropSimple } from 'react-icons/fa6';
 
 const Services = () => {
   return (
-    <div className="box-end">
-      <div className="under-the-end">
-        <div className="end-title">
-          <h1 style={{ color: 'aqua' }}>My <span style={{ color: 'white' }}>Services</span></h1>
-        </div>
-        <div className="card-end">
-          <div className="layout">
-            <div className="icon-1"><i className="fa-solid fa-code"></i></div>
-            <div className="title-4">
-              <h2>UX/UI Design</h2>
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit...</p>
-              <div className="btn-5">
-                <button><a href="https://dribbble.com/tags/ui-ux" style={{ textDecoration: 'none', color: 'black' }}>About</a></button>
-              </div>
-            </div>
-          </div>
-          {/* Add other service cards */}
-        </div>
+    <section className="services-section">
+      <div className="services-header">
+        <h1><span className="highlight">My</span> <span className="title">Services</span></h1>
       </div>
-    </div>
+      
+      <div className="services-grid">
+        <div className="service-card">
+          <div className="card-icon">
+            <FaCode className="icon" />
+          </div>
+          <div className="card-content">
+            <h3>UX/UI Design</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis iste delectus odio illum...
+            </p>
+            <a 
+              href="https://dribbble.com/tags/ui-ux" 
+              className="card-button"
+              target="_blank" 
+              rel="noopener noreferrer"
+            >
+              Learn More
+            </a>
+          </div>
+        </div>
+
+        <div className="service-card">
+          <div className="card-icon">
+            <FaApple className="icon" />
+          </div>
+          <div className="card-content">
+            <h3>Database</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis iste delectus odio illum...
+            </p>
+            <a 
+              href="https://dribbble.com/tags/mobile-app-design" 
+              className="card-button"
+              target="_blank" 
+              rel="noopener noreferrer"
+            >
+              Learn More
+            </a>
+          </div>
+        </div>
+
+        <div className="service-card">
+          <div className="card-icon">
+            <FaLaptopCode className="icon" />
+          </div>
+          <div className="card-content">
+            <h3>Web Design</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis iste delectus odio illum...
+            </p>
+            <a 
+              href="https://dribbble.com/tags/web%20design" 
+              className="card-button"
+              target="_blank" 
+              rel="noopener noreferrer"
+            >
+              Learn More
+            </a>
+          </div>
+        </div>
+        
+      </div>
+    </section>
   );
 };
 

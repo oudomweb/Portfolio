@@ -1,0 +1,237 @@
+.skills-section {
+  padding: 2rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  color: white;
+  font-family: 'Rubik', sans-serif;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.section-header h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-decoration: underline 5px #fff;
+  margin-bottom: 1rem;
+}
+
+.highlight {
+  color: aqua;
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.technical-skills, .professional-skills {
+  flex: 1;
+  min-width: 300px;
+  max-width: 550px;
+}
+
+.skills-title {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.skills-title h4 {
+  font-size: 1.5rem;
+  text-decoration: underline 4px;
+  color: white;
+}
+
+.skills-title span {
+  color: aqua;
+}
+
+.skills-list {
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 15px;
+  padding: 1.5rem;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
+}
+
+.skill-item {
+  margin: 1.5rem 0;
+}
+
+.skill-content {
+  width: 100%;
+}
+
+.skill-title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.skill-title svg {
+  font-size: 1.5rem;
+}
+
+.skill-title h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.skill-bar-container {
+  width: 100%;
+  height: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.skill-progress {
+  display: block;
+  height: 100%;
+  border-radius: 4px;
+  background: aqua;
+  position: relative;
+  /* animation: progressAnimation 1.5s ease-out forwards; */
+}
+
+.progress-tooltip {
+  position: absolute;
+  right: 0;
+  top: -30px;
+  background: aqua;
+  color: #000;
+  padding: 0.2rem 0.5rem;
+  border-radius: 3px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.progress-tooltip::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+  width: 10px;
+  height: 10px;
+  background: aqua;
+}
+
+/* Radial bars styles */
+.radial-skills-container {
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 15px;
+  padding: 1.5rem;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
+}
+
+.radial-bars-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.radial-bar-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.radial-bar-item svg {
+  width: 120px;
+  height: 120px;
+  transform: rotate(-90deg);
+}
+
+.radial-background {
+  fill: transparent;
+  stroke: rgba(255, 255, 255, 0.1);
+  stroke-width: 10;
+}
+
+.radial-progress {
+  fill: transparent;
+  stroke: aqua;
+  stroke-width: 10;
+  stroke-linecap: round;
+  /* animation: radialProgressAnimation 1.5s ease-out forwards; */
+}
+
+.radial-percentage {
+  position: absolute;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.radial-label {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+/* Icon colors */
+.html-icon { color: #E34F26; }
+.css-icon { color: #264de4; }
+.js-icon { color: #F7DF1E; }
+.react-icon { color: #61DBFB; }
+.node-icon { color: #68A063; }
+.python-icon { color: #3776AB; }
+
+/* Animations */
+@keyframes progressAnimation {
+  from { width: 0; }
+  to { width: var(--final-width); }
+}
+
+@keyframes radialProgressAnimation {
+  from { stroke-dashoffset: 502; }
+  to { stroke-dashoffset: var(--final-offset); }
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .section-header h1 {
+    font-size: 2rem;
+  }
+  
+  .skills-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .technical-skills, .professional-skills {
+    width: 100%;
+  }
+  
+  .radial-bars-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .radial-bar-item {
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-header h1 {
+    font-size: 1.8rem;
+  }
+  
+  .skills-title h4 {
+    font-size: 1.3rem;
+  }
+  
+  .skill-title svg {
+    font-size: 1.2rem;
+  }
+  
+  .skill-title h3 {
+    font-size: 1rem;
+  }
+}

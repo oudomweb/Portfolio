@@ -26,13 +26,16 @@ const Navbar = () => {
             <a href="/" onClick={() => setIsOpen(false)}>Home</a>
           </li>
           <li>
-            <a href="#contact" onClick={() => setIsOpen(false)}>Contact Us</a>
+            <a href="#contact" onClick={() => setIsOpen(false)}>Contact Me</a>
           </li>
           <li>
-            <a href="#about" onClick={() => setIsOpen(false)}>About Us</a>
+            <a href="#about" onClick={() => setIsOpen(false)}>About Me</a>
           </li>
           <li>
             <a href="#profile" onClick={() => setIsOpen(false)}>Profile</a>
+          </li>
+          <li>
+            <a href="#other" onClick={() => setIsOpen(false)}>Services</a>
           </li>
           <li>
             <a href="#other" onClick={() => setIsOpen(false)}>Other</a>

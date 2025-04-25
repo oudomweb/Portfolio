@@ -1,11 +1,11 @@
 import React from 'react';
-
+import Cafe from "../assets/images/Cafe.jpg";
 const About = () => {
   return (
     <div className="box-under-contain">
       <div className="box-under-box">
         <div className="box-img-1">
-          <img src="/photo/me1atpub.jpg" alt="About me" />
+          <img src={Cafe} alt="About me" />
         </div>
         <div className="box-p">
           <h1>About <span style={{ color: 'aqua' }}>Me</span></h1>
