@@ -1,5 +1,7 @@
 import React from 'react';
-
+import Kiloit from "../assets/images/Kiloit.jpg";
+import Etec from "../assets/images/Etec.jpg";
+import Norton from "../assets/images/norton.jpg";
 const Project = () => {
   return (
     <div className="projects-container">
@@ -8,12 +10,9 @@ const Project = () => {
       </div>
       
       <div className="projects-grid">
-        {/* Project 1 */}
         <div className="project-card">
           <div className="card-image">
-            <img 
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKe0AOjmfFeO6RUr_yD7T1SbPp3U9cNnhfSA&s" 
-              alt="Data Science" 
+            <img src={Kiloit}
             />
             <div className="card-overlay">
               <h3>What is Data Science?</h3>
@@ -29,11 +28,29 @@ const Project = () => {
           </a>
         </div>
 
+        {/* <div className="project-card">
+          <div className="card-image">
+            <img src={Kiloit}
+            />
+            <div className="card-overlay">
+              <h3>What is Data Science?</h3>
+              <p>Data science is the study of data to extract meaningful insights for business...</p>
+            </div>
+          </div>
+          <a href="#" className="project-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            KiloIT
+          </a>
+        </div> */}
+
         {/* Project 2 */}
         <div className="project-card">
           <div className="card-image">
             <img 
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCRerloxG_go8MpvD_FYvHwpSWb7580gwmBw&s" 
+              src={Etec}
               alt="Web Developer" 
             />
             <div className="card-overlay">
@@ -46,7 +63,7 @@ const Project = () => {
             <span></span>
             <span></span>
             <span></span>
-            Etec
+            Etec Center
           </a>
         </div>
 
@@ -54,7 +71,7 @@ const Project = () => {
         <div className="project-card">
           <div className="card-image">
             <img 
-              src="https://i.pinimg.com/736x/c6/f3/5c/c6f35c341ad6bd005c5c44facf11fe58.jpg" 
+              src={Norton}
               alt="Software Development" 
             />
             <div className="card-overlay">

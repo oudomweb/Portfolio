@@ -1,5 +1,7 @@
 import React from 'react';
-import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaPython, FaDatabase } from 'react-icons/fa';
+import CountUp from 'react-countup';
+import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaPython, FaDatabase, FaBootstrap, FaFigma } from 'react-icons/fa';
+import { SiTailwindcss } from 'react-icons/si';
 
 const Skills = () => {
   return (
@@ -17,17 +19,28 @@ const Skills = () => {
               icon: <FaHtml5 className="html-icon" />, title: 'HTML', percentage: '100%'
             }, {
               icon: <FaCss3Alt className="css-icon" />, title: 'CSS', percentage: '80%'
-            }, {
+            },
+            {
+              icon: <FaBootstrap className="bootstrap-icon" />, title: 'Bootstrap', percentage: '80%'
+            },
+            {
+              icon: <SiTailwindcss className="tailwind-icon " />, title: 'Tailwind CSS', percentage: '60%'
+            },
+             {
               icon: <FaJs className="js-icon"/>, title: 'JavaScript', percentage: '70%'
             }, {
               icon: <FaReact className="react-icon" />, title: 'React', percentage: '60%'
-            }, {
+            },
+            {
+              icon: <FaFigma className="figma-icon" />, title: 'Figma', percentage: '75%'
+            },
+             {
               icon: <FaNodeJs className="node-icon" />, title: 'Node.js', percentage: '50%'
             }, {
               icon: <FaPython className="python-icon" />, title: 'Python', percentage: '70%'
             },
             {
-               icon: <FaDatabase className="mysql-icon" />, title: 'MySQL', percentage: '85%' 
+               icon: <FaDatabase className="mysql-icon" />, title: 'MySQL', percentage: '80%' 
             }].map((skill, index) => (
               <div className="skill-item" key={index}>
                 <div className="skill-content">
@@ -46,10 +59,15 @@ const Skills = () => {
           </div>
         </div>
         <div className="professional-skills">
-          <div className="skills-title"><h4>Professional Skills</h4></div>
+          {/* <div className="skills-title"><h4>Professional Skills</h4></div> */}
+         <div className="skills-title"><h4>Soft <span className="highlight">Skills</span></h4></div> 
           <div className="radial-skills-container">
             <div className="radial-bars-grid">
-              {[{
+              {[
+              {
+                percentage: '85%', text: 'Teamwork'
+              },
+              {
                 percentage: '85%', text: 'Creativity'
               },
               {
@@ -59,10 +77,14 @@ const Skills = () => {
                 percentage: '70%', text: 'Project Manager'
               },
               {
-                percentage: '100%', text: 'Communication'
+                percentage: '70%', text: 'Communication'
               }, {
                 percentage: '75%', text: 'Teamwork'
-              }, {
+              },
+              {
+                percentage: '75%', text: 'Time Management'
+              },
+              {
                 percentage: '70%', text: 'Problem Solving'
               }].map((skill, index) => (
                 <div className="radial-bar-item" key={index}>
@@ -77,7 +99,10 @@ const Skills = () => {
                       }}
                     ></circle>
                   </svg>
-                  <div className="radial-percentage">{skill.percentage}</div>
+                  {/* <div className="radial-percentage">{skill.percentage}</div> */}
+                  <div className="radial-percentage">
+                    <CountUp end={parseInt(skill.percentage)} duration={1.9} />%
+                  </div>
                   <div className="radial-label">{skill.text}</div>
                 </div>
               ))}

@@ -1,9 +1,8 @@
 import React from 'react';
-import { FaLinkedin, FaGitlab, FaFacebook, FaInstagram, FaTelegram, FaTiktok } from 'react-icons/fa';
+import { FaLinkedin, FaGitlab,  FaGithub, FaInstagram, FaTelegram, FaTiktok } from 'react-icons/fa';
 import useTextAnimation from '../hooks/UseTextAnimation';
 import Profile from '../assets/images/Profile.jpg';
-// import Cafe from "../assets/images/Cafe.jpg";
-
+import CV from '../assets/images/Student_Frontend_Developer_CV.pdf';
 const Name = () => {
   const animatedText = useTextAnimation();
   return (
@@ -19,15 +18,14 @@ const Name = () => {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium nihil maxime id suscipit...
           </p>
           <div className="box-icon">
-            <div className="icon"><a href=""><FaLinkedin /></a></div>
-            <div className="icon"><a href=""><FaGitlab /></a></div>
-            <div className="icon"><a href=""><FaFacebook /></a></div>
-            <div className="icon"><a href=""><FaInstagram /></a></div>
-            <div className="icon"><a href=""><FaTelegram /></a></div>
-            <div className="icon"><a href=""><FaTiktok /></a></div>
+            <div className="icon"><a href="www.linkedin.com/in/oudom-ngoun-975585300"><FaLinkedin /></a></div>
+            <div className="icon"><a href="https://gitlab.com/keooudom189"><FaGitlab /></a></div>
+            <div className="icon"><a href="https://github.com/oudomweb"><FaGithub /></a></div>
+            <div className="icon"><a href="https://t.me/oudom_devKh"><FaTelegram /></a></div>
+            <div className="icon"><a href="https://www.tiktok.com/@keo71998"><FaTiktok /></a></div>
           </div>
           <div className="btn">
-            <a href="/photo/me2atpub.jpg">
+            <a href="" download={CV}>
               <span></span>
               <span></span>
               <span></span>

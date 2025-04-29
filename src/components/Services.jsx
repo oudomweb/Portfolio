@@ -15,7 +15,7 @@ const Services = () => {
             <FaCode className="icon" />
           </div>
           <div className="card-content">
-            <h3>UX/UI Design</h3>
+            <h3>UX/UI</h3>
             <p>
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis iste delectus odio illum...
             </p>
@@ -35,7 +35,7 @@ const Services = () => {
             <FaApple className="icon" />
           </div>
           <div className="card-content">
-            <h3>Database</h3>
+            <h3>Website</h3>
             <p>
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis iste delectus odio illum...
             </p>
@@ -55,7 +55,7 @@ const Services = () => {
             <FaLaptopCode className="icon" />
           </div>
           <div className="card-content">
-            <h3>Web Design</h3>
+            <h3>System</h3>
             <p>
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis iste delectus odio illum...
             </p>
