@@ -20,7 +20,7 @@ const Services = () => {
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis iste delectus odio illum...
             </p>
             <a 
-              href="https://dribbble.com/tags/ui-ux" 
+              href="https://www.figma.com/files/team/1471021803981044575/recents-and-sharing?fuid=1414882624076339352" 
               className="card-button"
               target="_blank" 
               rel="noopener noreferrer"

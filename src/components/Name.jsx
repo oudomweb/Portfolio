@@ -10,12 +10,13 @@ const Name = () => {
       <div className="nev-bar-1">
         <div className="box">
           <h1 style={{fontFamily: 'Suwannaphum', fontSize: '50px', color: '#0F89E2'}}>
-            Ngoun <span className="namepio"> OudoM</span><span className="me-2" style={{color: 'aqua'}}> Web</span>Developer
+            Ngoun <span className="namepio"> Oudom</span><span className="me-2" style={{color: 'aqua'}}> Web</span>Developer
           </h1>
-          <span className="txt exe">I'm a</span>
-          <span className="txt text-1">{animatedText}</span>
+          <span className="txt exe">I'm a<span></span> <span className="txt text-1">{animatedText}</span></span>
+          {/* <span className="txt text-1">{animatedText}</span> */}
           <p style={{fontSize: '16px', fontFamily: 'Roboto', color: 'white'}}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium nihil maxime id suscipit...
+          Welcome to my profile! <br />
+          I'm Oudom, the CEO of IT-ស្រុកស្រែ, a passionate tech group dedicated to building practical and user-friendly digital solutions tailored for communities and local businesses.
           </p>
           <div className="box-icon">
             <div className="icon"><a href="www.linkedin.com/in/oudom-ngoun-975585300"><FaLinkedin /></a></div>
@@ -30,7 +31,7 @@ const Name = () => {
               <span></span>
               <span></span>
               <span></span>
-              Download
+              Download My CV
             </a>
           </div>
         </div>

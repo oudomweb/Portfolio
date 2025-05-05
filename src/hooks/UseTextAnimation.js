@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 
 const useTextAnimation = () => {
-  const words = ['Designer', 'Developer', 'Freelancer']; // Words you want to animate
+  const words = ['Web Frontend Developer', 'Designer', 'Freelancer', 'Devops', 'Business Analyst']; // Words you want to animate
   const [index, setIndex] = useState(0); // which word
   const [subIndex, setSubIndex] = useState(0); // which letter
   const [blink, setBlink] = useState(true); // cursor blinking

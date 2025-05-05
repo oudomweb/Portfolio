@@ -7,7 +7,7 @@ const Skills = () => {
   return (
     <section className="skills-section">
       <div className="section-header">
-        <h1>My<span className="highlight">Skills</span></h1>
+        <h1>MY<span className="highlight"> SKILLS</span></h1>
       </div>
       <div className="skills-container">
         <div className="technical-skills">
@@ -16,7 +16,7 @@ const Skills = () => {
           </div>
           <div className="skills-list">
             {[{
-              icon: <FaHtml5 className="html-icon" />, title: 'HTML', percentage: '100%'
+              icon: <FaHtml5 className="html-icon" />, title: 'HTML', percentage: '80%'
             }, {
               icon: <FaCss3Alt className="css-icon" />, title: 'CSS', percentage: '80%'
             },
